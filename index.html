@@ -1,78 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
     <title>Formulario</title>
-</head>
-<body>
+  </head>
+  <body>
     <section class="form-generator">
-        <!--Datos personales -->
-        <h3>Datos Personales</h3>
-        <form action="">
+      <div style="text-align: center;">
+        <h1>CV</h1>
+        <h3>Español</h3>
+      </div>
+
+      <div style="display: flex;">
+        <h5>79% del perfil completado</h5>
+        <h5 style="margin: auto;">+7% Añadir referencias ?</h5>
+      </div>
+
+      <h2>Datos Personales</h2>
+      <form action="">
+        <div class="row">
+          <div class="column">
+            <label for="ijob">Puesto laboral ?</label>
+            <input
+              class="controls"
+              id="ijob"
+              type="text"
+              name="job"
+              placeholder="Escribe tu Puesto laboral"
+            />
+
             <label for="iname">Nombre</label>
-            <input class="controls" id="iname" type="text" name="name" placeholder="Escribe tu NBombre">
+            <input
+              class="controls"
+              id="iname"
+              type="text"
+              name="name"
+              placeholder="Escribe tu NBombre"
+            />
+
+            <label for="iemail">Correo</label>
+            <input
+              class="controls"
+              id="iemail"
+              type="email"
+              name="email"
+              placeholder="Escribe tu Correo"
+            />
+            <label for="icountry">País</label>
+            <input
+              class="controls"
+              id="icountry"
+              type="text"
+              name="country"
+              placeholder="Escribe tu País"
+            />
+          </div>
+          <div class="column">
+            <div style="display: block;">
+              <label for="isurname">IMAGEN</label>
+              <label for="">Editar foto</label>
+            </div>
+            <label for="" style="padding-left: 68px;">Borrar</label>
 
             <label for="isurname">Apellido</label>
-            <input class="controls" id="isurname" type="text" name="surname" placeholder="Escribe tu Apellido">
-            
-            <label for="ijob">Puesto laboral</label>
-            <input class="controls" id="ijob" type="text" name="job" placeholder="Escribe tu Puesto laboral">
+            <input
+              class="controls"
+              id="isurname"
+              type="text"
+              name="surname"
+              placeholder="Escribe tu Apellido"
+            />
 
             <label for="iphone">Teléfono</label>
-            <input class="controls" id="iphone" type="number" name="phone" placeholder="Escribe tu Teléfono">
-            
-            <label for="iemail">Correo</label>
-            <input class="controls" id="iemail" type="email" name="email" placeholder="Escribe tu Correo">  
-            
-            <label for="icountry">País</label>
-            <input class="controls" id="icountry" type="text" name="country" placeholder="Escribe tu País">
+            <input
+              class="controls"
+              id="iphone"
+              type="number"
+              name="phone"
+              placeholder="Escribe tu Teléfono"
+            />
 
             <label for="icity">Ciudad</label>
-            <input class="controls" id="icity" type="text" name="city" placeholder="Escribe tu Ciudad">
-            <!--Perfil profesional -->
-            <h3>Perfil profesional</h3>
-            <textarea name="iprofessionalprofile" cols="80" rows="20" placeholder="Escribe tu perfil profesional"></textarea>
-             <!--Experiencia profesional -->
+            <input
+              class="controls"
+              id="icity"
+              type="text"
+              name="city"
+              placeholder="Escribe tu Ciudad"
+            />
+          </div>
+        </div>
+        <div style="display: inline-block;">
+          <!--Perfil profesional -->
+          <h3>Perfil profesional</h3>
+          <textarea
+            name="iprofessionalprofile"
+            cols="80"
+            rows="20"
+            placeholder="Escribe tu perfil profesional"
+          ></textarea>
+          <!--Experiencia profesional -->
 
-            <h3>Experiencia profesional</h3>
-            
-            <label for="ijobtitle">Puesto laboral</label>
-            <input class="controls" id="ijobtitle" type="text" name="jobtitle" placeholder="Escribe tu Puesto laboral">  
-            
-            <label for="icompany">Empresa</label>
-            <input class="controls" id="icompany" type="text" name="company" placeholder="Escribe el nombre de la empresa">
+          <h3>Experiencia profesional</h3>
 
-            <label for="ijobcity">Ciudad</label>
-            <input class="controls" id="ijobcity" type="text" name="jobcity" placeholder="Escribe el nombre de la empresa">
+          <label for="ijobtitle">Puesto laboral</label>
+          <input
+            class="controls"
+            id="ijobtitle"
+            type="text"
+            name="jobtitle"
+            placeholder="Escribe tu Puesto laboral"
+          />
 
-            <label for="idatestartjob">Fecha Inicio</label>
-            <input class="controls" id="idatestart" type="date" name="datestart">
-            
-            <label for="idateend">Fecha Fin</label>
-            <input class="controls" id="idateend" type="date" name="dateend">
-            <label for="idescription">Descripcion del trabajo</label>
-            <textarea name="idescription" cols="80" rows="20" placeholder="Escribe la descripcion de las tareas realizadas"></textarea>
-            <!--Formacion -->
+          <label for="icompany">Empresa</label>
+          <input
+            class="controls"
+            id="icompany"
+            type="text"
+            name="company"
+            placeholder="Escribe el nombre de la empresa"
+          />
 
-            <h3>Formación</h3>
-            <label for="ientityeducation">Entidad</label>
-            <input class="controls" id="ientityeducation" type="text" name="entityeducation" placeholder="Escribe sitio de formación">  
-            
-            <label for="ititleeducation">Titulo</label>
-            <input class="controls" id="ititleeducation" type="text" name="titleeducation" placeholder="Escribe sitio de formación">  
+          <label for="ijobcity">Ciudad</label>
+          <input
+            class="controls"
+            id="ijobcity"
+            type="text"
+            name="jobcity"
+            placeholder="Escribe el nombre de la empresa"
+          />
 
-            <label for="idatestart">Fecha Inicio</label>
-            <input class="controls" id="idatestart" type="date" name="datestart">
-            
-            <label for="idateend">Fecha Fin</label>
-            <input class="controls" id="idateend" type="date" name="dateend"
-            <h3>Redes sociales y/o sitios web</h3>
-            <h3>Competencias</h3>
-            <input class="buttons" type="submit" value="Terminar">
-        </form>
+          <label for="idatestartjob">Fecha Inicio</label>
+          <input
+            class="controls"
+            id="idatestart"
+            type="date"
+            name="datestart"
+          />
+
+          <label for="idateend">Fecha Fin</label>
+          <input class="controls" id="idateend" type="date" name="dateend" />
+          <label for="idescription">Descripcion del trabajo</label>
+          <textarea
+            name="idescription"
+            cols="80"
+            rows="20"
+            placeholder="Escribe la descripcion de las tareas realizadas"
+          ></textarea>
+          <!--Formacion -->
+
+          <h3>Formación</h3>
+          <label for="ientityeducation">Entidad</label>
+          <input
+            class="controls"
+            id="ientityeducation"
+            type="text"
+            name="entityeducation"
+            placeholder="Escribe sitio de formación"
+          />
+
+          <label for="ititleeducation">Titulo</label>
+          <input
+            class="controls"
+            id="ititleeducation"
+            type="text"
+            name="titleeducation"
+            placeholder="Escribe sitio de formación"
+          />
+
+          <label for="idatestart">Fecha Inicio</label>
+          <input
+            class="controls"
+            id="idatestart"
+            type="date"
+            name="datestart"
+          />
+
+          <label for="idateend">Fecha Fin</label>
+          <input class="controls" id="idateend" type="date" name="dateend" />
+          <h3>Redes sociales y/o sitios web</h3>
+          <h3>Competencias</h3>
+          <input class="buttons" type="submit" value="Terminar" />
+        </div>
+      </form>
     </section>
-</body>
+  </body>
 </html>
+
+<style>
+  .column {
+    float: left;
+    width: 40%;
+    display: grid;
+    padding-right: 20px;
+  }
+
+  .row::after {
+    display: table;
+    clear: both;
+  }
+</style>
