@@ -182,24 +182,28 @@
           <label for="idateend">Fecha Fin</label>
           <input class="controls" id="idateend" type="date" name="dateend" />
           <h3>Redes sociales y/o sitios web</h3>
+          <label for="itaglink">Etiqueta</label>
+          <input id="itaglink" type="text" name="taglink">
+
+          <label for="ilinkweb">Enlace</label>
+          <input id="ilinkweb" type="text" name="linkweb">
           <h3>Competencias</h3>
-          <input class="buttons" type="submit" value="Terminar" />
+
+          <label for="iskill">Competencia</label>
+          <input id="iskill" type="text" name="skill">
+
+          <label for="level_skill">Nivel</label>
+
+          <input type="radio" id="beginner" name="level_skill" value="Principiante">
+          <label for="beginner">Principiante</label>
+          <input type="radio" id="medium" name="level_skill" value="Medio">
+          <label for="medium">Medio</label>
+          <input type="radio" id="advanced" name="level_skill" value="Avanzado">
+          <label for="advanced">Avanzado</label>
+          <input class="buttons" type="submit" value="Descargar PDF" />
         </div>
       </form>
     </section>
   </body>
 </html>
 
-<style>
-  .column {
-    float: left;
-    width: 40%;
-    display: grid;
-    padding-right: 20px;
-  }
-
-  .row::after {
-    display: table;
-    clear: both;
-  }
-</style>
