@@ -1,209 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style/style.css" />
-    <title>Formulario</title>
-  </head>
-  <body>
-    <section class="form-generator">
-      <div style="text-align: center;">
-        <h1>CV</h1>
-        <h3>Español</h3>
-      </div>
 
-      <div style="display: flex;">
-        <h5>79% del perfil completado</h5>
-        <h5 style="margin: auto;">+7% Añadir referencias ?</h5>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style/style.css" />
+  <title>Formulario</title>
+</head>
 
-      <h2>Datos Personales</h2>
-      <form action="">
-        <div class="row">
-          <div class="column">
-            <label for="ijob">Puesto laboral ?</label>
-            <input
-              class="controls"
-              id="ijob"
-              type="text"
-              name="job"
-              placeholder="Escribe tu Puesto laboral"
-            />
+<body>
+<header>
+    <h1>CV</h1>
+    <h3>Español</h3>
 
-            <label for="iname">Nombre</label>
-            <input
-              class="controls"
-              id="iname"
-              type="text"
-              name="name"
-              placeholder="Escribe tu NBombre"
-            />
+    <h5>79% del perfil completado</h5>
+    <h5>+7% Añadir referencias ?</h5>
+</header>
 
-            <label for="iemail">Correo</label>
-            <input
-              class="controls"
-              id="iemail"
-              type="email"
-              name="email"
-              placeholder="Escribe tu Correo"
-            />
-            <label for="icountry">País</label>
-            <input
-              class="controls"
-              id="icountry"
-              type="text"
-              name="country"
-              placeholder="Escribe tu País"
-            />
-          </div>
-          <div class="column">
-            <div style="display: block;">
-              <label for="isurname">IMAGEN</label>
-              <label for="">Editar foto</label>
-            </div>
-            <label for="" style="padding-left: 68px;">Borrar</label>
+<section class="">
+    <form action="">
+      <fieldset>
+        <legend>Datos Personales</legend>
+        <label for="ijob">Puesto laboral</label>
+        <input class="controls" id="ijob" type="text" name="job" placeholder="Escribe tu Puesto laboral" />
 
-            <label for="isurname">Apellido</label>
-            <input
-              class="controls"
-              id="isurname"
-              type="text"
-              name="surname"
-              placeholder="Escribe tu Apellido"
-            />
+        <label for="iname">Nombre</label>
+        <input class="controls" id="iname" type="text" name="name" placeholder="Escribe tu NBombre" />
 
-            <label for="iphone">Teléfono</label>
-            <input
-              class="controls"
-              id="iphone"
-              type="number"
-              name="phone"
-              placeholder="Escribe tu Teléfono"
-            />
+        <label for="iemail">Correo</label>
+        <input class="controls" id="iemail" type="email" name="email" placeholder="Escribe tu Correo" />
+        <label for="icountry">País</label>
+        <input class="controls" id="icountry" type="text" name="country" placeholder="Escribe tu País" />
 
-            <label for="icity">Ciudad</label>
-            <input
-              class="controls"
-              id="icity"
-              type="text"
-              name="city"
-              placeholder="Escribe tu Ciudad"
-            />
-          </div>
-        </div>
-        <div style="display: inline-block;">
-          <!--Perfil profesional -->
-          <h3>Perfil profesional</h3>
-          <textarea
-            name="iprofessionalprofile"
-            cols="80"
-            rows="20"
-            placeholder="Escribe tu perfil profesional"
-          ></textarea>
-          <!--Experiencia profesional -->
+        <label for="iprofileimage">IMAGEN</label>
+        <label for="">Editar foto</label>
+        <input type="file" id="iprofileimage" name="iprofileimage">
 
-          <h3>Experiencia profesional</h3>
+        <label for="">Borrar</label>
 
-          <label for="ijobtitle">Puesto laboral</label>
-          <input
-            class="controls"
-            id="ijobtitle"
-            type="text"
-            name="jobtitle"
-            placeholder="Escribe tu Puesto laboral"
-          />
+        <label for="isurname">Apellido</label>
+        <input class="controls" id="isurname" type="text" name="surname" placeholder="Escribe tu Apellido" />
 
-          <label for="icompany">Empresa</label>
-          <input
-            class="controls"
-            id="icompany"
-            type="text"
-            name="company"
-            placeholder="Escribe el nombre de la empresa"
-          />
+        <label for="iphone">Teléfono</label>
+        <input class="controls" id="iphone" type="number" name="phone" placeholder="Escribe tu Teléfono" />
 
-          <label for="ijobcity">Ciudad</label>
-          <input
-            class="controls"
-            id="ijobcity"
-            type="text"
-            name="jobcity"
-            placeholder="Escribe el nombre de la empresa"
-          />
+        <label for="icity">Ciudad</label>
+        <input class="controls" id="icity" type="text" name="city" placeholder="Escribe tu Ciudad" />
 
-          <label for="idatestartjob">Fecha Inicio</label>
-          <input
-            class="controls"
-            id="idatestart"
-            type="date"
-            name="datestart"
-          />
+      </fieldset>
+      <!--Perfil profesional -->
+      <fieldset>
+        <legend>Perfil profesional</legend>
+        <textarea name="iprofessionalprofile" cols="80" rows="20"
+          placeholder="Escribe tu perfil profesional"></textarea>
+      </fieldset>
+      <!--Experiencia profesional -->
+      <fieldset>
+        <legend>Experiencia profesional</legend>
 
-          <label for="idateend">Fecha Fin</label>
-          <input class="controls" id="idateend" type="date" name="dateend" />
-          <label for="idescription">Descripcion del trabajo</label>
-          <textarea
-            name="idescription"
-            cols="80"
-            rows="20"
-            placeholder="Escribe la descripcion de las tareas realizadas"
-          ></textarea>
-          <!--Formacion -->
+        <label for="ijobtitle">Puesto laboral</label>
+        <input class="controls" id="ijobtitle" type="text" name="jobtitle" placeholder="Escribe tu Puesto laboral" />
 
-          <h3>Formación</h3>
-          <label for="ientityeducation">Entidad</label>
-          <input
-            class="controls"
-            id="ientityeducation"
-            type="text"
-            name="entityeducation"
-            placeholder="Escribe sitio de formación"
-          />
+        <label for="icompany">Empresa</label>
+        <input class="controls" id="icompany" type="text" name="company"
+          placeholder="Escribe el nombre de la empresa" />
 
-          <label for="ititleeducation">Titulo</label>
-          <input
-            class="controls"
-            id="ititleeducation"
-            type="text"
-            name="titleeducation"
-            placeholder="Escribe sitio de formación"
-          />
+        <label for="ijobcity">Ciudad</label>
+        <input class="controls" id="ijobcity" type="text" name="jobcity"
+          placeholder="Escribe el nombre de la empresa" />
 
-          <label for="idatestart">Fecha Inicio</label>
-          <input
-            class="controls"
-            id="idatestart"
-            type="date"
-            name="datestart"
-          />
+        <label for="idatestartjob">Fecha Inicio</label>
+        <input class="controls" id="idatestart" type="date" name="datestart" />
 
-          <label for="idateend">Fecha Fin</label>
-          <input class="controls" id="idateend" type="date" name="dateend" />
-          <h3>Redes sociales y/o sitios web</h3>
-          <label for="itaglink">Etiqueta</label>
-          <input id="itaglink" type="text" name="taglink">
+        <label for="idateend">Fecha Fin</label>
+        <input class="controls" id="idateend" type="date" name="dateend" />
+        <label for="idescription">Descripcion del trabajo</label>
+        <textarea name="idescription" cols="80" rows="20"
+          placeholder="Escribe la descripcion de las tareas realizadas"></textarea>
+      </fieldset>
+      <!--Formacion -->
+      <fieldset>
+        <legend>Formación</legend>
+        <label for="ientityeducation">Entidad</label>
+        <input class="controls" id="ientityeducation" type="text" name="entityeducation"
+          placeholder="Escribe sitio de formación" />
 
-          <label for="ilinkweb">Enlace</label>
-          <input id="ilinkweb" type="text" name="linkweb">
-          <h3>Competencias</h3>
+        <label for="ititleeducation">Titulo</label>
+        <input class="controls" id="ititleeducation" type="text" name="titleeducation"
+          placeholder="Escribe sitio de formación" />
 
-          <label for="iskill">Competencia</label>
-          <input id="iskill" type="text" name="skill">
+        <label for="idatestart">Fecha Inicio</label>
+        <input class="controls" id="idatestart" type="date" name="datestart" />
 
-          <label for="level_skill">Nivel</label>
+        <label for="idateend">Fecha Fin</label>
+        <input class="controls" id="idateend" type="date" name="dateend" />
+      </fieldset>
+      <!--Redes sociales  -->
+      <fieldset>
+        <legend>Redes sociales y/o sitios web</legend>
+        <label for="itaglink">Etiqueta</label>
+        <input id="itaglink" type="text" name="taglink">
 
-          <input type="radio" id="beginner" name="level_skill" value="Principiante">
-          <label for="beginner">Principiante</label>
-          <input type="radio" id="medium" name="level_skill" value="Medio">
-          <label for="medium">Medio</label>
-          <input type="radio" id="advanced" name="level_skill" value="Avanzado">
-          <label for="advanced">Avanzado</label>
-          <input class="buttons" type="submit" value="Descargar PDF" />
-        </div>
-      </form>
-    </section>
-  </body>
+        <label for="ilinkweb">Enlace</label>
+        <input id="ilinkweb" type="text" name="linkweb">
+      </fieldset>
+      <fieldset>
+        <legend>Competencias</legend>
+        <!--Competencias  -->
+        <label for="iskill">Competencia</label>
+        <input id="iskill" type="text" name="skill">
+
+        <label for="level_skill">Nivel</label>
+
+        <input type="radio" id="beginner" name="level_skill" value="Principiante">
+        <label for="beginner">Principiante</label>
+        <input type="radio" id="medium" name="level_skill" value="Medio">
+        <label for="medium">Medio</label>
+        <input type="radio" id="advanced" name="level_skill" value="Avanzado">
+        <label for="advanced">Avanzado</label>
+        <input class="buttons" type="submit" value="Descargar PDF" />
+      </fieldset>
+    </form>
+  </section>
+</body>
+
 </html>
-
