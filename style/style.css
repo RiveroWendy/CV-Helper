@@ -1,5 +1,13 @@
+body {
+ font-size: 1rem;
+}
 form{
   margin: 0;
   width: 40rem;
-  padding: 1rem;
+  padding: 2rem;
+  font-family: monospace;
+}
+
+input, button{
+  font: inherit;
 }
